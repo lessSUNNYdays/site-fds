@@ -1,0 +1,240 @@
+@font-face {
+  font-family: batmfa;
+  src: url(batmfa__.ttf);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 20px;
+  text-align: center;
+  font-family: batmfa, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.section {
+  min-height: 150vh;
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+}
+
+#start {
+  background: radial-gradient(#0a003a, #9198e5);;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container {
+  display: flex;
+  align-items: flex-start; /* this will align the logo to the top of the container */
+  justify-content: center;
+  padding-top: 20px; /* add some space on top of the logo */
+}
+.logo {
+  animation: hover 2s ease-in-out infinite;
+  width: 80%;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#overview {
+  background: linear-gradient(to bottom,  #9198e5, #350041);
+}
+.text-box {
+  width: 80%;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  color:#000000;
+  
+}
+.text-box p {
+  color: #ffffff; /* black */
+  font-family: batmfa, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: none; 
+  
+}
+
+.text-box-bottom {
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+  
+}
+.text-box-bottom p {
+  color: #ffffff; /* black */
+  font-family: batmfa, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: none; 
+  
+}
+.images-box {
+  display: flex;
+  justify-content: space-between;
+}
+.images-box img {
+  width: 477px;
+  height: 270px;
+}
+#characters {
+  background: linear-gradient(to bottom,  #350041, #340074);
+}
+.picture-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 20%;
+  height: auto;
+  margin: 5px;
+}
+
+/*Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 4px solid rgb(109, 174, 255);
+  width: 80%;
+}
+.modal-header h2{
+  font-family: batmfa, sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+}
+.modal-text p {
+  font-family: batmfa, sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #290055;
+  color: white;
+}
+
+/* Modal body */
+.modal-body {
+  padding: 2px 16px;
+  display: flex;
+}
+
+/* Modal image */
+.modal-body img {
+  width: 40%;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Modal text */
+.modal-text {
+  width: 50%;
+}
+
+#trailer {
+  background: linear-gradient(to right, #340074, #1b379c);
+}
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-text {
+  width: 50%;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: batmfa, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: none;
+  
+}
+
+.video {
+  width: 60%;
+  height: 450px;
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Make font-size smaller for text on mobile */
+  .text-box p, .text-box-bottom p {
+    font-size: 20px;
+  }
+
+  /* Make images smaller on mobile */
+  .images-box img {
+    width: 300px;
+    height: 150px;
+  }
+
+  /* Make character thumbnails smaller on mobile */
+  .thumbnail {
+    width: 30%;
+    margin: 5px;
+  }
+  .images-box {
+    flex-direction: column; /* Stack the images vertically */
+}
+}
+
